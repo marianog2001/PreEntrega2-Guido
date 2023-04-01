@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html{   
+    
+    background-color: rgb(34, 33, 30);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: calc(1.25vw + 1.25vh);
+    line-height: 170%;
+    color:white;
+}
+
+body{
+    background-color: rgb(42, 46, 46);
+    width:90%;
+    margin:0 auto;
+    border-top:1px solid orange;
+    border-bottom: 1px solid orange;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+strong{
+    font-weight: 400;
+}
+
+h3, h3 i{
+    font-size: calc(1.75vw + 1.75vh);
+}
+
+b{
+    font-weight: 500;
+}
+
+section p{
+    padding: 1em;
+}
+
+.fancybox-button--play,
+.fancybox-button--thumbs {
+    display: none !important;
+}
+
+#alyx-intro h3{
+    font-weight: 900;
+    font-size: 5rem;
+    color: orange;
+    text-align: center;
+    margin-bottom: 0;
+}
+#alyx-intro h4{
+    text-align: center;
+    margin-top: 0;
+}
+#alyx-intro a{
+    font-weight: 500;
+    margin-bottom: 4.5rem;
+}
+/* ------------------------------------------------ */
+section p{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.w-90{
+    width: 90%;
+}
+
+#steam-button{
+    height: 8vw;
+    width: 8vh;
+    fill: white;
+}
+
+/* .text-center{
+    text-align:center
+}
+.text-right{
+    text-align: right
+} */
+
+.banner{
+    width: 100%;
+}
+.get-button{
+    width: 20vw;
+    height: 15vh;
+    
+}
+
+
+/* ------------NAV------------ */
+
+
+#lambda-logo{
+    height:8vw;
+    width:8vh;
+    fill: black;
+}
+.my-navbar{
+    background-color: orange;
+}
+.my-navbar ul li a:hover,#lambda-logo:hover{
+    color: white;
+    fill: white;
+} 
+
+/* ------------------------------MERCH---------------------------- */
+ 
+#merch{
+    background-color: rgb(34, 33, 30);
+    border-top: 1px solid orange;
+    border-bottom:1px solid orange;
+    padding: 5rem 0;
+    margin:5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ #merch a{
+    display: flex;
+    justify-content: center;
+ }
+ #merch a img{
+    padding: 3em;
+    width: 90%;
+ }
+
+/*---------------------FIN MERCH--------------------- */
+
+
+/* --------FOOTER--------- */
+footer ul:last-child{
+    text-align: right;
+    padding-right: 3rem;
+}
+
+
+footer{
+    border-top: 1px solid orange;
+    margin-top:5vw;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: black;
+}
+    .pie a{
+        text-align: center;
+    }
+    .pie ul{
+        list-style:none;
+        display:flex;
+        flex-direction: column;
+        min-width: 33%;
+    }
+        .pie ul li{
+            flex-shrink:1;
+        }
+
+            .pie ul li a{
+                font-size:2vw;
+                text-decoration: none;
+                color: orange;
+                min-width: 33%;
+            }
+
+            .valve-logo{
+                justify-content: center;
+                align-items: center;
+                width:70%;
+}
+ /* --------FIN FOOTER--------- */
+
+ 
+/* -----------------SECCION PRINCIPAL----------------- */ 
+#front-intro{
+    margin-bottom: 4rem;
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+
+}
+    
+    #front-intro p{
+        width:85vw;
+        font-size: calc(1.5vw + 1.5vh);
+        align-self: center;
+    }  
+/* -----------------FIN SECCION PRINCIPAL----------------- */
+
+/* -----------------PORTADA + DESC DERECHA----------------- */
+.cover-title-desc{
+    background-color: rgb(34, 33, 30);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    margin: 5vw 2vw;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+    .cover-title-desc h1{
+        font-size: 3vw;
+        font-weight: 500;
+        color: orange;
+    }
+    .cover-title-desc div{ 
+
+        display: flex;
+        align-items: center;
+        /* width: 50vw; */
+    }
+    .cover-title-desc div p{
+        width: 40vw;
+        font-size: calc(1.5vw + 1.5vh);
+
+    }
+    .cover-title-desc div *{
+        padding: 0 1vw;
+    }
+    .cover-title-desc div a img{
+        width: 23vw;
+        padding-bottom:1.7vw ;
+    }
+
+/* -----------------FIN PORTADA + DESC DERECHA----------------- */
+
+
+
+/* -----------------FULL SAGA STEAMBTN----------------- */
+#steam-section{
+    border-bottom: 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    padding:1rem 2rem;
+    font-weight: 500;
+}
+            #full-saga-img{
+                width:60vw;
+                border: 1px solid orange; 
+                margin-bottom: 5rem;             
+            }
+        
+                #steam-logo-img{
+                    width: 70%;
+                }
+/* -----------------FIN FULL SAGA STEAMBTN----------------- */
+
+
+/* -----------------PRESET---------------------- */
+
+
+.img-p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    
+}
+
+    .img-p p{
+        width: 90%;
+        font-size: calc(1.5vw + 1.5vh);
+    }
+    .img-p img{
+        border: 1px solid orange;
+        width: 100%;
+    }
+    .img-p a{
+        margin:5rem 0;
+        background-color: rgb(34, 33, 30);
+        color: white;
+    }
+    #imgp-last-b{
+        font-size:calc(1.5vw + 1.5vh) ;
+        width:calc(25vw + 5vh) ;
+    }
+/* ----------------------REVIEWS----------------------------- */
+
+.grid-reviews{
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 35em 25em;
+    grid-template-areas:
+    "img img img"
+    "r1 r2 r3";
+    margin-bottom: 10vh;
+
+}
+.grid-reviews img{
+    width: 100%;
+    grid-area: img;
+}
+/* .r1{grid-area:r1}
+.r2{grid-area:r2}
+.r3{grid-area:r3}
+
+.r1,.r2,.r3{
+    line-height:2.5vw ;
+    font-size: calc(1.5vw + 1vh);
+}
+
+.r1 a,.r2 a,.r3 a{text-decoration: none} */
+
+/* .image-n-review{
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.image-n-review img{  
+    width: 100%;
+    border: 1px solid orange;
+}
+
+    .reviews{
+        width:100%;
+        display: flex;
+    }
+        .reviews p{
+            line-height:2.3vw ;
+            padding: 0 1vw;
+            font-size: 1.3vw;
+            margin: 2vh 2vh;
+            width: 33vw;
+        }
+            .reviews p a{text-decoration: none;
+            }
+                .reviews p a cite{
+                    font-style: normal;
+                    color: orange;
+                    text-decoration: none;
+                    font-weight: 500;
+                } */
+
+/* ------------------REVIEWS END--------------------------- */
+
+
+
+/* ---------------------------TECH INFO------------------------------- */
+
+.tech-info{
+    justify-self: center;
+    display:grid;
+    grid-template-columns: 30vw 55vw;
+    grid-template-rows: 40vw 6vw;
+    grid-template-areas:
+    "img table"
+    "img button";
+    align-items: start;
+    justify-items: start;
+}
+
+.tech-table{
+    box-sizing: content-box;
+    grid-area:table;
+    width: 50vw;
+}
+
+    .tech-table td{
+        font-size: calc(1vw + 1vh);
+        font-weight: 500;
+        border: 1px solid orange;
+        text-align:center;
+        padding: 0.8rem;
+        background-color: rgb(34, 33, 30);
+    }
+
+.tech-img{
+    justify-self: center;
+    grid-area: img;
+    height: 40vw;
+}
+.tech-info .get-button{
+    grid-area: button;
+}
+
+
+
+
+
+/* .tech-info{
+    margin-bottom:5rem;
+    padding-bottom:10rem;
+    border-bottom:1px solid orange;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tech-info div{
+    justify-content: flex-start;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+    .table-img{
+        height: 80vh;
+        border: 1px solid orange;
+    }
+    .tech-table{
+        padding-bottom: 4rem;
+        display:flex;
+    }
+    .tech-table .table-topic{
+        color:orange;
+    }
+    .tech-table td{
+        font-size: 2.5rem;
+        font-weight: 500;
+        border: 1px solid orange;
+        text-align:center;
+        padding: 0.8rem;
+        background-color: rgb(34, 33, 30);
+    }
+ */
+
+/* ----------------------------TECH INFO END--------------------*/
+
+.exps{
+    width: 100%;
+    margin:15vw 0;
+}
+
+.exps div{
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+    .exps div div{
+        padding-top: 1vh;
+        display: flex;
+        width:50vw;
+        flex-direction: column;
+    }
+        .exps div div img{
+            border: 1px solid orange;
+            align-self: center;
+            width: 30vw;
+        }
+        .exps div div p{
+            align-self:center;
+            width: 70%;
+            font-size: calc(1vh + 1.5vw);
+        }
+
+/* -------------PAGINA ALYX--------------- */
+/* #alyx-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+#alyx-section1 div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    #alyx-section1 div h1 span{
+    color: orange;
+    font-weight: 900;
+    font-size: 4rem;
+    }
+    #alyx-section1 div a{
+        margin-top: 0;
+    }
+    #alyx-section1 div h4{
+        margin: 0;
+        font-size: 2.5rem;
+        color: orange;
+    }
+    #alyx-section1 div{
+        height: 45rem;
+    }
+        #alyx-section1 div a img{
+            border: 1px solid orange;
+            width:70rem;
+            height: 45rem;
+        }
+
+.text-orange{
+    color: orange;
+}
+
+
+#alyx-section2{
+    justify-content: center;
+    width: 95%;
+    display:grid;
+    row-gap:2rem;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: 20rem auto 10rem 20rem;
+    grid-template-areas: 
+    "head head head"
+    "img img img"
+    "gameplay gameplay gameplay"
+    "trailers trailers trailers";   
+    margin-bottom: 10rem;
+}
+
+    #alyx-div1{
+        grid-area: head;
+        display: flex;
+        justify-content: space-between;
+    }
+        #alyx-div1 h1{
+            color: orange;
+            text-align: center;
+            width: 35vw;
+            font-size: 5rem;
+            font-weight: 500; 
+        }
+        #alyx-div1 h2{
+            width:35vw;
+        }
+    
+
+    .trailers{
+        grid-area: trailers;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+.fs-xl{
+    font-size: 5rem;
+}
+
+
+
+
+
+
+/* 1°  BREAKPOINT */
+@media only screen and (min-width:1024px) {
+    .my-navbar{
+        height:15vh;
+    }
+    .my-navbar ul li a{
+        border-left:1px solid black
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .my-navbar{
+        height: 10vw;
+    }
+    .my-navbar ul{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+
+        .my-navbar div a{
+            width: 10vw;
+            padding-left:2.7vw ;
+        }
+
+        .my-navbar ul li {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
+        .my-navbar ul li:first-child{border-left:none;}
+
+            .my-navbar ul li a{
+                border-left: 1px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+            }
+    .pie ul li a{
+        font-size:2.2vw
+    }     
+    
+    .reviews p, .reviews b{
+        font-size: 1em;
+        line-height: 1.7em;
+    }  
+}
+
+@media only screen and (max-width:767.98px){
+    .my-navbar ul li a{
+        color: black;
+    }
+}
