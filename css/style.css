@@ -131,6 +131,10 @@ section p{
         font-size: 0.8em;
         min-width: 33%;
     }
+    .footer a span{
+        font-size: 1em;
+        color:orange;
+    }
     .footer ul{
         list-style: none;
         padding: 0;
