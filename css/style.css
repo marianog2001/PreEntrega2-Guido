@@ -325,81 +325,9 @@ section p{
 /* ------------------FIN-EXPANSIONES-------------------------- */
 
 /* -------------PAGINA ALYX--------------- */
-#alyx-section1 div{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    }
-    
-    #alyx-section1 div h1 span{
-    color: orange;
-    font-weight: 900;
-    font-size: 4rem;
-    }
-    #alyx-section1 div a{
-        margin-top: 0;
-    }
-    #alyx-section1 div h4{
-        margin: 0;
-        font-size: 2.5rem;
-        color: orange;
-    }
-    #alyx-section1 div{
-        height: 45rem;
-    }
-        #alyx-section1 div a img{
-            border: 1px solid orange;
-            width:70rem;
-            height: 45rem;
-        }
-#alyx-section2{
-    justify-content: center;
-    width: 95%;
-    display:grid;
-    row-gap:2rem;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows: 20rem auto 10rem 20rem;
-    grid-template-areas: 
-    "head head head"
-    "img img img"
-    "gameplay gameplay gameplay"
-    "trailers trailers trailers";   
-    margin-bottom: 10rem;
-}
-    #alyx-div1{
-        grid-area: head;
-        display: flex;
-        justify-content: space-between;
-    }
-        #alyx-div1 h1{
-            color: orange;
-            text-align: center;
-            width: 35vw;
-            font-size: 5rem;
-            font-weight: 500; 
-        }
-        #alyx-div1 h2{
-            width:35vw;
-        }
-    .trailers{
-        grid-area: trailers;
-        display: flex;
-        justify-content: space-evenly;
-    }
-#alyx-intro h3{
-    font-weight: 900;
-    font-size: 5rem;
-    color: orange;
-    text-align: center;
-    margin-bottom: 0;
-}
-#alyx-intro h4{
-    text-align: center;
-    margin-top: 0;
-}
-#alyx-intro a{
-    font-weight: 500;
-    margin-bottom: 4.5rem;
+
+.div-trailer a img{
+    width: max-content;
 }
 
 
@@ -411,9 +339,21 @@ section p{
     .my-navbar ul li a{
         border-left:1px solid black
     }
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 40%;
+  height: 65%;
+  transform: translateY(-50%);
+}
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px){
+
+    .div-header-resp{
+        text-align: center;
+    }
+
     .my-navbar{
         height: 10vw;
     }
@@ -457,6 +397,12 @@ section p{
         font-size: 1em;
     }
 
+.carousel-control-prev,
+.carousel-control-next {
+  top: 35%;
+  height: 60%;
+  transform: translateY(-50%);
+}
 
 
 }
@@ -518,12 +464,30 @@ section p{
             display: none;
         }
         .footer-list-svg{
-            width:2em ;
+            font-size: 2em;
         }
         .footer-list-2{
             text-align: left !important;
-
         }
+
+.section-div-workshop div{
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-trailer a{
+    padding: 0.5em 0.5em;
+    width: 60%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 25%;
+  height: 20%;
+  transform: translateY(-50%);
+}
+    
+    
 }
 
 
