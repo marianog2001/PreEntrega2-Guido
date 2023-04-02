@@ -131,10 +131,6 @@ section p{
         font-size: 0.8em;
         min-width: 33%;
     }
-    .footer a span{
-        font-size: 1em;
-        color:orange;
-    }
     .footer ul{
         list-style: none;
         padding: 0;
@@ -143,6 +139,10 @@ section p{
         grid-area: fl1;
         text-decoration: none;
     }
+        .footer-list-1 li a span{
+            color: orange;
+            font-size: 1em;
+        }
     .footer-list-1 svg{
         width: 1em;
     }
