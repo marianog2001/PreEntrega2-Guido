@@ -41,64 +41,34 @@ b{
 
 section p{
     padding: 1em;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .fancybox-button--play,
 .fancybox-button--thumbs {
     display: none !important;
 }
-
-#alyx-intro h3{
-    font-weight: 900;
+.fs-xl{
     font-size: 5rem;
+}
+.text-orange{
     color: orange;
-    text-align: center;
-    margin-bottom: 0;
 }
-#alyx-intro h4{
-    text-align: center;
-    margin-top: 0;
-}
-#alyx-intro a{
-    font-weight: 500;
-    margin-bottom: 4.5rem;
-}
-/* ------------------------------------------------ */
-section p{
-    margin: 0 auto;
-    width: 90%;
-}
-
 .w-90{
     width: 90%;
 }
-
 #steam-button{
     height: 8vw;
     width: 8vh;
     fill: white;
 }
-
-/* .text-center{
-    text-align:center
-}
-.text-right{
-    text-align: right
-} */
-
-.banner{
-    width: 100%;
-}
 .get-button{
     width: 20vw;
-    height: 15vh;
-    
+    height: 15vh; 
 }
 
-
 /* ------------NAV------------ */
-
-
 #lambda-logo{
     height:8vw;
     width:8vh;
@@ -111,9 +81,9 @@ section p{
     color: white;
     fill: white;
 } 
+/* ---------------------FIN-NAV----------------- */
 
 /* ------------------------------MERCH---------------------------- */
- 
 #merch{
     background-color: rgb(34, 33, 30);
     border-top: 1px solid orange;
@@ -132,69 +102,59 @@ section p{
     padding: 3em;
     width: 90%;
  }
-
 /*---------------------FIN MERCH--------------------- */
 
 
 /* --------FOOTER--------- */
-footer ul:last-child{
-    text-align: right;
-    padding-right: 3rem;
-}
-
-
-footer{
+.footer{
+    margin-top:1em;
+    padding-top: 1em;
     border-top: 1px solid orange;
-    margin-top:5vw;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    background-color: black;
+    display: grid;
+    grid-template-rows: 33vh;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: "fl1 fl fl2";   
 }
-    .pie a{
-        text-align: center;
-    }
-    .pie ul{
-        list-style:none;
-        display:flex;
-        flex-direction: column;
+    .footer a{
+        text-decoration: none;
+        color: orange;
+        font-size: 0.8em;
         min-width: 33%;
     }
-        .pie ul li{
-            flex-shrink:1;
-        }
+    .footer ul{
+        list-style: none;
+        padding: 0;
+    }
+     .footer-list-1{
+        grid-area: fl1;
+        text-decoration: none;
+    }
+    .footer-list-1 svg{
+        width: 1em;
+    }
+    .footer-list-2{
+        grid-area: fl2;   
+    }
 
-            .pie ul li a{
-                font-size:2vw;
-                text-decoration: none;
-                color: orange;
-                min-width: 33%;
-            }
+    .footer-logo{
+        width: 70%;
+        grid-area: fl;
+    }
 
-            .valve-logo{
-                justify-content: center;
-                align-items: center;
-                width:70%;
-}
+    #footer-list-youtube{
+        fill: red;
+    }
+    #footer-list-reddit{
+        fill: rgb(255, 69, 0);
+    }
+    #footer-list-twitter{
+        fill: rgb(29 161 242);
+    }
+    #footer-list-steam{
+        fill: rgb(199, 213, 224)
+    }
  /* --------FIN FOOTER--------- */
-
  
-/* -----------------SECCION PRINCIPAL----------------- */ 
-#front-intro{
-    margin-bottom: 4rem;
-    display:flex;
-    flex-direction:column;
-    align-content: center;
-
-}
-    
-    #front-intro p{
-        width:85vw;
-        font-size: calc(1.5vw + 1.5vh);
-        align-self: center;
-    }  
-/* -----------------FIN SECCION PRINCIPAL----------------- */
-
 /* -----------------PORTADA + DESC DERECHA----------------- */
 .cover-title-desc{
     background-color: rgb(34, 33, 30);
@@ -203,8 +163,7 @@ footer{
     padding: 2vw;
     margin: 5vw 2vw;
     justify-content: space-evenly;
-    align-items: center;
-    
+    align-items: center;    
 }
     .cover-title-desc h1{
         font-size: 3vw;
@@ -233,7 +192,6 @@ footer{
 /* -----------------FIN PORTADA + DESC DERECHA----------------- */
 
 
-
 /* -----------------FULL SAGA STEAMBTN----------------- */
 #steam-section{
     border-bottom: 0;
@@ -244,29 +202,25 @@ footer{
     padding:1rem 2rem;
     font-weight: 500;
 }
-            #full-saga-img{
-                width:60vw;
-                border: 1px solid orange; 
-                margin-bottom: 5rem;             
-            }
+    #full-saga-img{
+        width:60vw;
+        border: 1px solid orange; 
+        margin-bottom: 5rem;             
+    }
         
-                #steam-logo-img{
-                    width: 70%;
-                }
+    #steam-logo-img{
+        width: 70%;
+    }
 /* -----------------FIN FULL SAGA STEAMBTN----------------- */
 
 
-/* -----------------PRESET---------------------- */
-
-
+/* -----------------IMAGEN+PARRAFO---------------------- */
 .img-p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5rem;
-    
+    margin-bottom: 5rem;    
 }
-
     .img-p p{
         width: 90%;
         font-size: calc(1.5vw + 1.5vh);
@@ -284,6 +238,9 @@ footer{
         font-size:calc(1.5vw + 1.5vh) ;
         width:calc(25vw + 5vh) ;
     }
+/* ----------------FIN-IMAGEN+PARRAFO----------------- */
+ 
+    
 /* ----------------------REVIEWS----------------------------- */
 
 .grid-reviews{
@@ -300,55 +257,9 @@ footer{
     width: 100%;
     grid-area: img;
 }
-/* .r1{grid-area:r1}
-.r2{grid-area:r2}
-.r3{grid-area:r3}
-
-.r1,.r2,.r3{
-    line-height:2.5vw ;
-    font-size: calc(1.5vw + 1vh);
-}
-
-.r1 a,.r2 a,.r3 a{text-decoration: none} */
-
-/* .image-n-review{
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-.image-n-review img{  
-    width: 100%;
-    border: 1px solid orange;
-}
-
-    .reviews{
-        width:100%;
-        display: flex;
-    }
-        .reviews p{
-            line-height:2.3vw ;
-            padding: 0 1vw;
-            font-size: 1.3vw;
-            margin: 2vh 2vh;
-            width: 33vw;
-        }
-            .reviews p a{text-decoration: none;
-            }
-                .reviews p a cite{
-                    font-style: normal;
-                    color: orange;
-                    text-decoration: none;
-                    font-weight: 500;
-                } */
-
 /* ------------------REVIEWS END--------------------------- */
 
-
-
 /* ---------------------------TECH INFO------------------------------- */
-
 .tech-info{
     justify-self: center;
     display:grid;
@@ -360,13 +271,11 @@ footer{
     align-items: start;
     justify-items: start;
 }
-
 .tech-table{
     box-sizing: content-box;
     grid-area:table;
     width: 50vw;
 }
-
     .tech-table td{
         font-size: calc(1vw + 1vh);
         font-weight: 500;
@@ -375,57 +284,17 @@ footer{
         padding: 0.8rem;
         background-color: rgb(34, 33, 30);
     }
-
-.tech-img{
-    justify-self: center;
-    grid-area: img;
-    height: 40vw;
-}
-.tech-info .get-button{
-    grid-area: button;
-}
-
-
-
-
-
-/* .tech-info{
-    margin-bottom:5rem;
-    padding-bottom:10rem;
-    border-bottom:1px solid orange;
-    display: flex;
-    justify-content: space-around;
-}
-
-.tech-info div{
-    justify-content: flex-start;
-    display:flex;
-    flex-direction: column;
-    align-items:flex-start;
-}
-    .table-img{
-        height: 80vh;
-        border: 1px solid orange;
+    .tech-img{
+        justify-self: center;
+        grid-area: img;
+        height: 40vw;
     }
-    .tech-table{
-        padding-bottom: 4rem;
-        display:flex;
+    .tech-info .get-button{
+        grid-area: button;
     }
-    .tech-table .table-topic{
-        color:orange;
-    }
-    .tech-table td{
-        font-size: 2.5rem;
-        font-weight: 500;
-        border: 1px solid orange;
-        text-align:center;
-        padding: 0.8rem;
-        background-color: rgb(34, 33, 30);
-    }
- */
-
 /* ----------------------------TECH INFO END--------------------*/
 
+/* ------------------EXPANSIONES-------------------------- */
 .exps{
     width: 100%;
     margin:15vw 0;
@@ -453,14 +322,9 @@ footer{
             width: 70%;
             font-size: calc(1vh + 1.5vw);
         }
+/* ------------------FIN-EXPANSIONES-------------------------- */
 
 /* -------------PAGINA ALYX--------------- */
-/* #alyx-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
 #alyx-section1 div{
     display:flex;
     flex-direction: column;
@@ -488,12 +352,6 @@ footer{
             width:70rem;
             height: 45rem;
         }
-
-.text-orange{
-    color: orange;
-}
-
-
 #alyx-section2{
     justify-content: center;
     width: 95%;
@@ -508,7 +366,6 @@ footer{
     "trailers trailers trailers";   
     margin-bottom: 10rem;
 }
-
     #alyx-div1{
         grid-area: head;
         display: flex;
@@ -524,21 +381,26 @@ footer{
         #alyx-div1 h2{
             width:35vw;
         }
-    
-
     .trailers{
         grid-area: trailers;
         display: flex;
         justify-content: space-evenly;
     }
-
-.fs-xl{
+#alyx-intro h3{
+    font-weight: 900;
     font-size: 5rem;
+    color: orange;
+    text-align: center;
+    margin-bottom: 0;
 }
-
-
-
-
+#alyx-intro h4{
+    text-align: center;
+    margin-top: 0;
+}
+#alyx-intro a{
+    font-weight: 500;
+    margin-bottom: 4.5rem;
+}
 
 
 /* 1°  BREAKPOINT */
@@ -590,10 +452,78 @@ footer{
         font-size: 1em;
         line-height: 1.7em;
     }  
+
+    .footer a{
+        font-size: 1em;
+    }
+
+
+
 }
 
 @media only screen and (max-width:767.98px){
+    *{
+        font-size: calc(2.5vw + 1.2vh);
+    }
     .my-navbar ul li a{
         color: black;
     }
+
+    #merch{
+        width: 90%;
+    }
+
+    #merch a img{
+        padding: 1em;
+        width: 100%
+    }
+
+    #full-saga-img{
+        margin-bottom: 1em;
+        width: 95%;
+    }
+
+    .get-button{
+        width: 40vw;
+        height: min-content;
+    }
+
+    .cover-title-desc{
+        width: 90%;
+    }
+        .cover-title-desc div{
+            flex-direction: column;
+        }
+        .cover-title-desc div p{
+            width: 90%;
+            font-size: calc(2.5vw + 1.2vh);
+        }
+        .cover-title-desc div a img{
+            width: 60vw;
+        }
+
+    .footer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25vh 25vh;
+        grid-template-areas: 
+        "fl2 fl"
+        "fl2 fl1";
+    }
+        .footer-list-1{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .footer-list-1 span{
+            display: none;
+        }
+        .footer-list-svg{
+            width:2em ;
+        }
+        .footer-list-2{
+            text-align: left !important;
+
+        }
 }
+
+

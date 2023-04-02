@@ -3,3 +3,5 @@ passwords.txt
 *.ai
 node_modules/
 *.psd
+*.vsc
+*.log
