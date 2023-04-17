@@ -8,8 +8,8 @@ html{
 *{
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    font-size: calc(1.25vw + 1.25vh);
-    line-height: 170%;
+    font-size: 1.1em;
+    line-height: 150%;
     color:white;
 }
 
@@ -26,22 +26,10 @@ main{
     align-items: center;
 }
 
-strong{
-    font-weight: 400;
-}
-
-h3, h3 i{
-    font-size: calc(1.75vw + 1.75vh);
-}
-
-b{
-    font-weight: 500;
-}
-
 section p{
     padding: 1em;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
 }
 
 .fancybox-button--play,
@@ -174,10 +162,10 @@ section p{
     background-color: rgb(34, 33, 30);
     display: flex;
     flex-direction: column;
-    padding: 2vw;
-    margin: 5vw 2vw;
     justify-content: space-evenly;
-    align-items: center;    
+    align-items: center; 
+    padding: 2vw;
+    margin: 5vw 2vw; 
 }
     .cover-title-desc h1{
         font-size: 3vw;
@@ -191,14 +179,15 @@ section p{
         /* width: 50vw; */
     }
     .cover-title-desc div p{
-        width: 40vw;
-        font-size: calc(1.5vw + 1.5vh);
+        /* width: 40vw; */
+        font-size: 2.5vw;
+        padding: 1em;
 
     }
     .cover-title-desc div *{
         padding: 0 1vw;
     }
-    .cover-title-desc div a img{
+    .cover-title-desc div img{
         width: 23vw;
         padding-bottom:1.7vw ;
     }
@@ -208,18 +197,16 @@ section p{
 
 /* -----------------FULL SAGA STEAMBTN----------------- */
 #steam-section{
-    border-bottom: 0;
     display:flex;
     flex-direction:column;
     align-items:center;
     text-align: center;
-    padding:1rem 2rem;
-    font-weight: 500;
+    padding:1em 2em;
 }
     #full-saga-img{
         width:60vw;
         border: 1px solid orange; 
-        margin-bottom: 5rem;             
+        margin-bottom:2em;             
     }
         
     #steam-logo-img{
@@ -233,11 +220,11 @@ section p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5rem;    
+    margin-bottom: 4em;    
 }
     .img-p p{
-        width: 90%;
-        font-size: calc(1.5vw + 1.5vh);
+        padding: 1em 1em;
+        font-size: calc(1.5vw + 1vh);
     }
     .img-p img{
         border: 1px solid orange;
@@ -248,10 +235,7 @@ section p{
         background-color: rgb(34, 33, 30);
         color: white;
     }
-    #imgp-last-b{
-        font-size:calc(1.5vw + 1.5vh) ;
-        width:calc(25vw + 5vh) ;
-    }
+   
 /* ----------------FIN-IMAGEN+PARRAFO----------------- */
  
     
@@ -286,18 +270,15 @@ section p{
     justify-items: start;
 }
 .tech-table{
-    box-sizing: content-box;
-    grid-area:table;
-    width: 50vw;
+    font-size: 2.5vw;
 }
-    .tech-table td{
-        font-size: calc(1vw + 1vh);
+    /* .tech-table td{
         font-weight: 500;
         border: 1px solid orange;
         text-align:center;
         padding: 0.8rem;
         background-color: rgb(34, 33, 30);
-    }
+    } */
     .tech-img{
         justify-self: center;
         grid-area: img;
@@ -309,40 +290,12 @@ section p{
 /* ----------------------------TECH INFO END--------------------*/
 
 /* ------------------EXPANSIONES-------------------------- */
-.exps{
-    width: 100%;
-    margin:15vw 0;
-}
-
-.exps div{
-    margin-bottom: 10rem;
+.exps div div{
     display: flex;
-    flex-direction: row;
-    height: 100vh;
+    flex-direction: column;
+    align-items: center;
 }
-    .exps div div{
-        padding-top: 1vh;
-        display: flex;
-        width:50vw;
-        flex-direction: column;
-    }
-        .exps div div img{
-            border: 1px solid orange;
-            align-self: center;
-            width: 30vw;
-        }
-        .exps div div p{
-            align-self:center;
-            width: 70%;
-            font-size: calc(1vh + 1.5vw);
-        }
 /* ------------------FIN-EXPANSIONES-------------------------- */
-
-/* -------------PAGINA ALYX--------------- */
-
-.div-trailer a img{
-    width: max-content;
-}
 
 
 /* 1°  BREAKPOINT */
@@ -422,8 +375,8 @@ section p{
 }
 
 @media only screen and (max-width:767.98px){
-    *{
-        font-size: calc(2.5vw + 1.2vh);
+    tbody td{
+        font-size: 1.1em;
     }
     .my-navbar ul li a{
         color: black;
@@ -481,7 +434,8 @@ section p{
             font-size: 2em;
         }
         .footer-list-2{
-            text-align: left !important;
+            /* text-align: left !important; */
+            padding-right: 1em;
         }
 
 .section-div-workshop div{

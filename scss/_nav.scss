@@ -1,0 +1,36 @@
+
+
+.my-navbar{
+    background-color: $mainColor;
+    #lambda-logo{
+        height:8vw;
+        width:8vh;
+        fill: $blackColor;
+        &:hover{fill: $whiteColor;}
+    }
+    ul{
+        li{
+            a:hover{
+                color: $whiteColor}
+            }
+    }
+}
+
+
+//navbar pagina de valve
+#navbar-valve{
+    background-color: $valveRed;
+
+    #navbar-brand-valve{
+        display: block;
+        width: 8vw;
+        height: 100%;
+        fill: $blackColor;
+    }
+
+    @media only screen and (max-width:768px){
+        #navbar-brand-valve{
+            width: 15vw;
+        }
+    }
+}

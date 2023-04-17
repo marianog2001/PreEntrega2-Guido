@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+.my-navbar {
+  background-color: orange;
+}
+.my-navbar #lambda-logo {
+  height: 8vw;
+  width: 8vh;
+  fill: black;
+}
+.my-navbar #lambda-logo:hover {
+  fill: white;
+}
+.my-navbar ul li a:hover {
+  color: white;
+}
+
+#navbar-valve {
+  background-color: rgb(247, 72, 67);
+}
+#navbar-valve #navbar-brand-valve {
+  display: block;
+  width: 8vw;
+  height: 100%;
+  fill: black;
+}
+@media only screen and (max-width: 768px) {
+  #navbar-valve #navbar-brand-valve {
+    width: 15vw;
+  }
+}
+
+.footer, .footer-valve {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid orange;
+  display: grid;
+  grid-template-rows: 33vh;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas: "fl1 fl fl2";
+}
+.footer a, .footer-valve a {
+  text-decoration: none;
+  color: orange;
+  font-size: 0.8em;
+  min-width: 33%;
+}
+.footer ul, .footer-valve ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-list-1, .footer-valve .footer-list-1 {
+  grid-area: fl1;
+  text-decoration: none;
+}
+.footer .footer-list-1 li a span, .footer-valve .footer-list-1 li a span {
+  color: orange;
+  font-size: 1em;
+}
+.footer .footer-list-1 svg, .footer-valve .footer-list-1 svg {
+  width: 1em;
+}
+.footer .footer-list-2, .footer-valve .footer-list-2 {
+  grid-area: fl2;
+}
+.footer .footer-logo, .footer-valve .footer-logo {
+  width: 70%;
+  grid-area: fl;
+}
+.footer #footer-list-youtube, .footer-valve #footer-list-youtube {
+  fill: red;
+}
+.footer #footer-list-reddit, .footer-valve #footer-list-reddit {
+  fill: rgb(255, 69, 0);
+}
+.footer #footer-list-twitter, .footer-valve #footer-list-twitter {
+  fill: rgb(29, 161, 242);
+}
+.footer #footer-list-steam, .footer-valve #footer-list-steam {
+  fill: rgb(199, 213, 224);
+}
+
+.footer-valve {
+  border-top: 1px solid rgb(247, 72, 67);
+}
+.footer-valve a {
+  color: rgb(247, 72, 67);
+}
+.footer-valve .footer-list-1 li a span {
+  color: rgb(247, 72, 67);
+}
+
+.cover-title-desc {
+  background-color: rgb(34, 33, 30);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2vw;
+  margin: 5vw 2vw;
+}
+.cover-title-desc h1 {
+  color: orange;
+}
+.cover-title-desc div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cover-title-desc div * {
+  padding: 0 1vw;
+}
+.cover-title-desc div p {
+  font-size: 2.5vw;
+  line-height: 150%;
+  color: orange;
+  padding: 1em;
+  font-family: "Roboto", sans-serif;
+}
+.cover-title-desc div img {
+  width: 23vw;
+  padding-bottom: 1.7vw;
+}
+
+@media only screen and (max-width: 996px) {
+  .tech-info table {
+    margin-top: 2em;
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .tech-info table {
+    margin-top: 2em;
+  }
+  .tech-info tr {
+    border: 1px solid orange;
+  }
+  .tech-info td {
+    display: block;
+    text-align: center;
+    border: none;
+  }
+  .tech-info .get-button {
+    width: 30vw;
+  }
+}
+.tech-info td:first-child {
+  color: orange;
+}
+
+.merch {
+  background-color: rgb(34, 33, 30);
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.merch a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullsaga {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2em;
+}
+.fullsaga img {
+  width: 60vw;
+  border: 1px solid orange;
+  margin-bottom: 2em;
+}
+
+.img-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4.4em;
+}
+.img-p h3 {
+  padding: 1em 0;
+}
+.img-p p {
+  padding: 1em;
+  font-size: calc(1.5vw + 1vh);
+}
+.img-p img {
+  width: 100%;
+  border: 1px solid orange;
+}
+
+.review {
+  font-size: 0.8em;
+}
+.review p {
+  padding: 1em;
+}
+
+.exps div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.exps p {
+  padding: 1em;
+}
+
+/* cartas expandibles */
+.banner {
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  height: fit-content;
+}
+.banner a {
+  max-width: fit-content;
+  text-decoration: none;
+}
+.banner a h3 {
+  color: rgba(0, 0, 0, 0);
+  font-size: 9em;
+}
+.banner a h3:hover {
+  font-size: 11em;
+}
+.banner:hover .articulo {
+  width: 20%;
+}
+.banner .articulo {
+  border: 1px solid rgb(247, 72, 67);
+  object-fit: cover;
+  float: left;
+  height: 50vh;
+  width: 33.3333%;
+  transition: 0.3s;
+  background-size: cover;
+  background-position: center;
+}
+.banner .articulo:hover {
+  width: 50vw;
+  height: 60vh;
+}
+.banner .articulo:nth-child(1) {
+  background-image: url(../img/valve/orangebox.webp);
+}
+.banner .articulo:nth-child(2) {
+  background-image: url(../img/valve/steamdeck2.jpg);
+}
+.banner .articulo:nth-child(3) {
+  background-image: url(../img/valve/steamstore.jpg);
+}
+
+/* fin cartas expandibles */
+.juegos a {
+  text-decoration: none;
+  color: white;
+}
+.juegos a h4 {
+  font-weight: 300;
+  text-align: center;
+}
+.juegos article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+.juegos img {
+  width: 25vw;
+  height: 40vh;
+  border: 1px solid rgb(247, 72, 67);
+}
+
+.hardware h3 {
+  font-weight: 300;
+}
+.hardware h3 span {
+  font-weight: 500;
+}
+.hardware h4 {
+  color: rgb(247, 72, 67);
+  font-weight: 300;
+  text-align: center;
+}
+.hardware h5 {
+  text-align: end;
+  font-weight: 300;
+  color: rgba(199, 213, 224, 0.5);
+}
+.hardware .carousel {
+  width: 98%;
+  margin: 5em 0;
+  padding: 0;
+  border: 1px solid rgb(247, 72, 67);
+}
+
+.steam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.steam svg {
+  width: 1em;
+  fill: rgb(102, 192, 244);
+}
+.steam a {
+  color: rgb(102, 192, 244);
+  width: 20vw;
+}
+.steam a:hover svg {
+  transform: translateX(10px);
+  transition: transform 0.5s ease;
+}
+
+.contacto .card-body {
+  background-color: rgb(34, 33, 30);
+  color: white;
+}
+.contacto .card-body h5 {
+  color: rgb(247, 72, 67);
+  font-size: inherit;
+}
+.contacto a {
+  text-align: start;
+  display: flex;
+  font-size: 3em;
+  font-weight: 500;
+  border-radius: 0;
+  background-color: rgb(247, 72, 67);
+  border-color: rgb(247, 72, 67);
+}
+.contacto a:hover {
+  background-color: rgb(34, 33, 30);
+  border-color: rgb(34, 33, 30);
+  color: rgb(247, 72, 67);
+}
+
+.div-header-resp {
+  margin: 2em 0;
+}
+.div-header-resp h3 {
+  font-size: 1.5em;
+}
+.div-header-resp h4 {
+  font-size: 1em;
+}
+
+.bg-fade {
+  background: rgb(76, 68, 65);
+  background: linear-gradient(180deg, rgb(76, 68, 65) 2%, rgb(42, 46, 46) 100%);
+}
+
+html {
+  background-color: rgb(34, 33, 30);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.1em;
+  line-height: 150%;
+  color: white;
+}
+
+body {
+  background-color: rgb(42, 46, 46);
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid orange;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+b {
+  font-weight: 500;
+}
+
+.bg-gray {
+  background-color: rgb(34, 33, 30);
+}
+
+.fancybox-button--play,
+.fancybox-button--thumbs {
+  display: none !important;
+}
+
+.fs-xl {
+  font-size: 5rem;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+#steam-button {
+  height: 8vw;
+  width: 8vh;
+  fill: white;
+}
+
+.get-button {
+  width: 20vw;
+  height: 15vh;
+}
+
+.orange-border {
+  border: 1px solid orange;
+}
+
+.body-valve {
+  border-bottom: 1px solid rgb(247, 72, 67);
+}
+
+@media only screen and (min-width: 1024px) {
+  .my-navbar {
+    height: 15vh;
+  }
+  .my-navbar ul li a {
+    border-left: 1px solid black;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 40%;
+    height: 65%;
+    transform: translateY(-50%);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .div-header-resp {
+    text-align: center;
+  }
+  .my-navbar {
+    height: 10vw;
+  }
+  .my-navbar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+  .my-navbar div a {
+    width: 10vw;
+    padding-left: 2.7vw;
+  }
+  .my-navbar ul li {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .my-navbar ul li:first-child {
+    border-left: none;
+  }
+  .my-navbar ul li a {
+    border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .pie ul li a {
+    font-size: 2.2vw;
+  }
+  .reviews p, .reviews b {
+    font-size: 1em;
+    line-height: 1.7em;
+  }
+  .footer a, .footer-valve a {
+    font-size: 1em;
+  }
+  #navbar-brand-valve {
+    transform: translateX(-12px);
+    scale: 1.5;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    top: 35%;
+    height: 60%;
+    transform: translateY(-50%);
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  * {
+    font-size: calc(2.5vw + 1.2vh);
+  }
+  .my-navbar ul li a {
+    color: black;
+  }
+  #merch {
+    width: 90%;
+  }
+  #merch a img {
+    padding: 1em;
+    width: 100%;
+  }
+  #full-saga-img {
+    margin-bottom: 1em;
+    width: 95%;
+  }
+  .get-button {
+    width: 40vw;
+    height: min-content;
+  }
+  .cover-title-desc {
+    width: 90%;
+  }
+  .cover-title-desc div {
+    flex-direction: column;
+  }
+  .cover-title-desc div p {
+    width: 90%;
+    font-size: calc(2.5vw + 1.2vh);
+  }
+  .cover-title-desc div a img {
+    width: 60vw;
+  }
+  .footer, .footer-valve {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25vh 25vh;
+    grid-template-areas: "fl2 fl" "fl2 fl1";
+  }
+  .footer-list-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .footer-list-1 span {
+    display: none;
+  }
+  .footer-list-svg {
+    font-size: 2em;
+  }
+  .footer-list-2 {
+    text-align: left !important;
+    margin-left: 0.5em;
+  }
+  .section-div-workshop div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .div-trailer a {
+    padding: 0.5em 0.5em;
+    width: 60%;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    top: 25%;
+    height: 20%;
+    transform: translateY(-50%);
+  }
+  .dispositivos .row div:nth-child(2) a {
+    margin: 2em 0;
+    padding: 3em 0;
+  }
+  .dispositivos .row div:nth-child(3) img {
+    height: 70vh;
+  }
+  .juegos a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .juegos a img {
+    width: 70vw;
+    height: 70vh;
+  }
+  .banner {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

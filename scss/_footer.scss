@@ -1,0 +1,70 @@
+.footer{
+    margin-top:1em;
+    padding-top: 1em;
+    border-top: 1px solid $mainColor;
+    display: grid;
+    grid-template-rows: 33vh;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: "fl1 fl fl2";  
+    a{
+        text-decoration: none;
+        color: $mainColor;
+        font-size: 0.8em;
+        min-width: 33%;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    .footer-list-1{
+        grid-area: fl1;
+        text-decoration: none;
+        li{
+            a{
+                span{
+                    color: orange;
+                    font-size: 1em;
+                }
+            }
+        }
+        svg{
+            width: 1em;
+        }
+    }
+    .footer-list-2{
+        grid-area: fl2; 
+    }
+    .footer-logo{
+        width: 70%;
+        grid-area: fl;
+    }
+    #footer-list-youtube{
+        fill: $youtubeColor
+    }
+    #footer-list-reddit{
+        fill: $redditColor
+    }
+    #footer-list-twitter{
+        fill: $twitterColor
+    }
+    #footer-list-steam{
+        fill: $steamColor
+    }
+}
+
+.footer-valve{
+    @extend .footer;
+    border-top:1px solid $valveRed;
+    a{
+        color: $valveRed;
+    }
+    .footer-list-1{
+        
+            li{
+                a{
+                    span{color: $valveRed;}
+                }
+            }
+        
+    }
+}

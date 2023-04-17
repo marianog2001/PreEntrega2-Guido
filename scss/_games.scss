@@ -1,0 +1,305 @@
+.cover-title-desc {
+    background-color: $bgColor;
+    @include flex(column, space-evenly, center);
+    padding: 2vw;
+    margin: 5vw 2vw;
+
+    h1 {
+        color: $mainColor;
+    }
+
+    div {
+        @include flex(row, flex-start, center);
+
+        * {
+            padding: 0 1vw;
+        }
+
+        p {
+            @include textos(2.5vw, 150%, $mainColor, 1em)
+        }
+
+        img {
+            width: 23vw;
+            padding-bottom: 1.7vw;
+        }
+    }
+}
+
+.tech-info {
+    @media only screen and (max-width:996px) {
+        table {
+            margin-top: 2em;
+            width: 75%;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        table {
+            margin-top: 2em;
+        }
+
+        tr {
+            border: 1px solid $mainColor;
+        }
+
+        td {
+            display: block;
+            text-align: center;
+            border: none;
+        }
+
+        .get-button {
+            width: 30vw;
+        }
+    }
+
+    td:first-child {
+        color: $mainColor;
+    }
+}
+
+
+.merch {
+    background-color: $bgColor;
+    border-top: 1px solid $mainColor;
+    border-bottom: 1px solid $mainColor;
+    @include flex(column, center, center);
+
+    a {
+        @include flex(row, center, center)
+    }
+
+}
+
+.fullsaga {
+    @include flex(row, center, center);
+    padding: 1em 2em;
+
+    img {
+        width: 60vw;
+        border: 1px solid $mainColor;
+        margin-bottom: 2em;
+    }
+}
+
+.img-p {
+    @include flex(column, center, center);
+    margin-bottom: 4.4em;
+
+    h3 {
+        padding: 1em 0;
+    }
+
+    p {
+        padding: 1em;
+        font-size: calc(1.5vw + 1vh);
+    }
+
+    img {
+        width: 100%;
+        border: 1px solid orange;
+    }
+}
+
+.review {
+    font-size: 0.8em;
+
+    p {
+        padding: 1em;
+    }
+}
+
+.exps {
+    div {
+        div {
+            @include flex(column, start, center)
+        }
+    }
+
+    p {
+        padding: 1em;
+    }
+}
+
+/* cartas expandibles */
+.banner {
+    overflow: hidden;
+
+    a {
+        h3 {
+            color: rgba($color: #000000, $alpha: 0);
+            font-size: 9em;
+
+            &:hover {
+                font-size: 11em;
+            }
+        }
+
+        max-width: fit-content;
+        text-decoration: none;
+
+    }
+
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    height: fit-content;
+
+    &:hover {
+        .articulo {
+            width: 20%;
+        }
+    }
+
+    .articulo {
+        border: 1px solid $valveRed;
+        object-fit: cover;
+        float: left;
+        height: 50vh;
+        width: 33.3333%;
+        transition: 0.3s;
+        background-size: cover;
+        background-position: center;
+
+        &:hover {
+            width: 50vw;
+            height: 60vh;
+        }
+
+        &:nth-child(1) {
+            background-image: url(../img/valve/orangebox.webp);
+        }
+
+        &:nth-child(2) {
+            background-image: url(../img/valve/steamdeck2.jpg);
+        }
+
+        &:nth-child(3) {
+            background-image: url(../img/valve/steamstore.jpg);
+        }
+    }
+
+}
+
+/* fin cartas expandibles */
+
+.juegos {
+    a {
+        text-decoration: none;
+        color: white;
+
+        h4 {
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+
+    article {
+        @include flex(column, center, center);
+        margin: 1em 0;
+    }
+
+    img {
+        width: 25vw;
+        height: 40vh;
+        border: 1px solid $valveRed;
+    }
+}
+
+.hardware {
+    h3 {
+        font-weight: 300;
+
+        span {
+            font-weight: 500
+        }
+    }
+
+    h4 {
+        color: $valveRed;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    h5 {
+        text-align: end;
+        font-weight: 300;
+        color: rgba(199, 213, 224, 0.5);
+    }
+
+    .carousel {
+        width: 98%;
+        margin: 5em 0;
+        padding: 0;
+        border: 1px solid $valveRed;
+    }
+}
+
+.steam {
+    @include flex(column, center, center);
+
+    svg {
+        width: 1em;
+        fill: $steamBlue;
+    }
+
+    a {
+        color: $steamBlue;
+        width: 20vw;
+
+        &:hover {
+            svg {
+                transform: translateX(10px);
+                transition: transform 0.5s ease;
+            }
+        }
+    }
+}
+
+.contacto {
+    .card-body {
+        background-color: $bgColor;
+        color: white;
+
+        h5 {
+            color: $valveRed;
+            font-size: inherit;
+        }
+    }
+
+    a {
+        text-align: start;
+        display: flex;
+        font-size: 3em;
+        font-weight: 500;
+        border-radius: 0;
+        background-color: $valveRed;
+        border-color: $valveRed;
+
+        &:hover {
+            background-color: $bgColor;
+            border-color: $bgColor;
+            color: $valveRed;
+        }
+    }
+}
+
+
+.div-header-resp {
+    margin: 2em 0;
+
+    h3 {
+        font-size: 1.5em
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+}
+
+
+.bg-fade {
+    background: rgb(76, 68, 65);
+    background: linear-gradient(180deg, rgba(76, 68, 65, 1) 2%, rgba(42, 46, 46, 1) 100%);
+}

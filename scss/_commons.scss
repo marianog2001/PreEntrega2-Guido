@@ -1,0 +1,61 @@
+html{  
+    background-color:$bgColor;
+}
+*{
+    font-family: $mainFont;
+    font-weight: $mainFontWeight;
+    font-size: $mainFontSize;
+    line-height:$mainLineHeight;
+    color:$whiteColor;
+}
+body{
+    background-color: $bodyColor;
+    width:90%;
+    margin:0 auto;
+    border-bottom: 1px solid $mainColor;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+b{
+    font-weight: $bFontSize;
+}
+
+.bg-gray{
+    background-color: $bgColor;
+}
+
+.fancybox-button--play,
+.fancybox-button--thumbs {
+    display: none !important;
+}
+.fs-xl{
+    font-size: 5rem;
+}
+.text-orange{
+    color: $mainColor;
+}
+.w-90{
+    width: 90%;
+}
+#steam-button{
+    height: 8vw;
+    width: 8vh;
+    fill: $whiteColor;
+}
+.get-button{
+    width: 20vw;
+    height: 15vh; 
+}
+
+.orange-border{
+    border: 1px solid $mainColor;
+}
+
+.body-valve{
+    border-bottom: 1px solid $valveRed;
+}
+
