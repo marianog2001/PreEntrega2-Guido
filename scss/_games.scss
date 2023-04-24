@@ -50,7 +50,7 @@
         }
 
         .get-button {
-            width: 30vw;
+            width: 50vw;
         }
     }
 
@@ -60,11 +60,12 @@
 }
 
 
-.merch {
+.merch{
+    @include flex(column, center, center);
     background-color: $bgColor;
     border-top: 1px solid $mainColor;
     border-bottom: 1px solid $mainColor;
-    @include flex(column, center, center);
+    
 
     a {
         @include flex(row, center, center)
@@ -74,12 +75,11 @@
 
 .fullsaga {
     @include flex(row, center, center);
-    padding: 1em 2em;
+    margin: 1em 0;
 
     img {
         width: 60vw;
         border: 1px solid $mainColor;
-        margin-bottom: 2em;
     }
 }
 
@@ -258,6 +258,11 @@
 }
 
 .contacto {
+    .btn:active, .btn:focus{
+        background-color: $bgColor;
+        border: 1px solid $valveRed;
+        color: $valveRed;
+    }
     .card-body {
         background-color: $bgColor;
         color: white;
@@ -303,3 +308,4 @@
     background: rgb(76, 68, 65);
     background: linear-gradient(180deg, rgba(76, 68, 65, 1) 2%, rgba(42, 46, 46, 1) 100%);
 }
+

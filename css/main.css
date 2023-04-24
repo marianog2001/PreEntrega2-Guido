@@ -141,7 +141,7 @@
     border: none;
   }
   .tech-info .get-button {
-    width: 30vw;
+    width: 50vw;
   }
 }
 .tech-info td:first-child {
@@ -149,13 +149,13 @@
 }
 
 .merch {
-  background-color: rgb(34, 33, 30);
-  border-top: 1px solid orange;
-  border-bottom: 1px solid orange;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(34, 33, 30);
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
 }
 .merch a {
   display: flex;
@@ -169,12 +169,11 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1em 2em;
+  margin: 1em 0;
 }
 .fullsaga img {
   width: 60vw;
   border: 1px solid orange;
-  margin-bottom: 2em;
 }
 
 .img-p {
@@ -323,6 +322,11 @@
   transition: transform 0.5s ease;
 }
 
+.contacto .btn:active, .contacto .btn:focus {
+  background-color: rgb(34, 33, 30);
+  border: 1px solid rgb(247, 72, 67);
+  color: rgb(247, 72, 67);
+}
 .contacto .card-body {
   background-color: rgb(34, 33, 30);
   color: white;
@@ -501,8 +505,18 @@ b {
   * {
     font-size: calc(2.5vw + 1.2vh);
   }
+  .fs-inherit {
+    font-size: inherit;
+  }
   .my-navbar ul li a {
     color: black;
+  }
+  .img-p {
+    margin: 1vh;
+  }
+  .img-p h3 {
+    text-align: center;
+    font-size: inherit;
   }
   #merch {
     width: 90%;
@@ -533,9 +547,9 @@ b {
     width: 60vw;
   }
   .footer, .footer-valve {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25vh 25vh;
-    grid-template-areas: "fl2 fl" "fl2 fl1";
+    grid-template-columns: 1fr;
+    grid-template-rows: 16.66666vh 16.6666vh 16.66666;
+    grid-template-areas: "fl1" "fl2" "fl";
   }
   .footer-list-1 {
     display: flex;
@@ -549,7 +563,7 @@ b {
     font-size: 2em;
   }
   .footer-list-2 {
-    text-align: left !important;
+    text-align: center !important;
     margin-left: 0.5em;
   }
   .section-div-workshop div {
@@ -580,7 +594,10 @@ b {
   }
   .juegos a img {
     width: 70vw;
-    height: 70vh;
+    height: 35vh;
+  }
+  .steam a {
+    width: 50vw;
   }
   .banner {
     display: none;

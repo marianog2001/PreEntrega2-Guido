@@ -70,14 +70,30 @@
   transform: translateY(-50%);
 }
 
+
+
 }
 
 @media only screen and (max-width:767.98px){
     *{
         font-size: calc(2.5vw + 1.2vh);
     }
+
+    .fs-inherit{
+        font-size: inherit;
+    }
+
     .my-navbar ul li a{
         color: black;
+    }
+
+    .img-p{
+        h3{
+            text-align: center;
+            font-size: inherit;
+        }
+        margin: 1vh;
+        
     }
 
     #merch{
@@ -114,11 +130,12 @@
         }
 
     .footer{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 25vh 25vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 16.66666vh 16.6666vh 16.66666;
         grid-template-areas: 
-        "fl2 fl"
-        "fl2 fl1";
+        "fl1"
+        "fl2"
+        "fl"
     }
         .footer-list-1{
             display: flex;
@@ -133,7 +150,7 @@
             font-size: 2em;
         }
         .footer-list-2{
-            text-align: left !important;
+            text-align: center !important;
             margin-left: 0.5em;
         }
         
@@ -177,10 +194,17 @@
         @include flex(column,center,center);
         img{
             width: 70vw;
-            height: 70vh;
+            height: 35vh;
         }
     }
 }
+
+.steam{
+    a{
+        width: 50vw;
+    }
+}
+
 
 .banner{
     display: none;
