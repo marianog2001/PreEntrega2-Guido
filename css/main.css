@@ -365,6 +365,21 @@
   background: linear-gradient(180deg, rgb(76, 68, 65) 2%, rgb(42, 46, 46) 100%);
 }
 
+.btn-valve {
+  color: rgb(34, 33, 30);
+  background-color: rgb(247, 72, 67);
+}
+.btn-valve:hover {
+  color: rgb(247, 72, 67);
+  background-color: rgb(34, 33, 30);
+  border: 1px solid rgb(247, 72, 67);
+}
+.btn-valve a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
 html {
   background-color: rgb(34, 33, 30);
 }
